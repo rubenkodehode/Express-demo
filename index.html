@@ -3,45 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
     <link rel="stylesheet" href="/public/stylesheets/style.css" />
-    <script src="/public/frontend.js" defer></script>
-    <title>Login Page</title>
   </head>
   <body>
-    <div class="header">
-      <h1>Welcome to the Log-in page</h1>
-    </div>
+    <h2 class="header">Welcome to Fun Facts!</h2>
+
     <div class="body-container">
-      <div class="create-container">
-        <h2>Create User</h2>
-        <div class="input-container">
-          <label for="firstname">First name:</label>
-          <input type="text" id="firstname" />
-
-          <label for="lastname">Last name:</label>
-          <input type="text" id="lastname" />
-
-          <label for="email">E-mail adress:</label>
-          <input type="text" id="email" />
-          <label for="hashedpassword">Password:</label>
-          <input type="password" id="hashedpassword" />
-        </div>
-        <button id="createBtn">Create user</button>
-      </div>
-      <div class="login-container">
-        <h2>Login</h2>
-        <div class="input-container">
-          <label for="username">Username:</label>
-          <input type="text" id="username" />
-
-          <label for="password">Password:</label>
-          <input type="password" id="password" />
-        </div>
-
-        <button id="loginBtn">Login</button>
-
-        <p id="message"></p>
-      </div>
+      <a id="registerLink" class="create-container" href="register.html"
+        >Register</a
+      >
+      <a id="loginLink" class="login-container" href="login.html">Login</a>
+      <a
+        id="createFactLink"
+        class="create-container hidden"
+        href="create-fact.html"
+        >Create Fact</a
+      >
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
